@@ -98,6 +98,46 @@ let mouseButtonPressed = (event, index) => {
 
 /** 
  * @todo FOR ASSIGNMENT 2, ADD YOUR OWN FUNCTION DEFINITIONS AS DIRECTED IN THE ASSIGNMENT
+ 
+ let convertToLarger = (num, i) = Math.trunc(num/i); 
+ console.log(convertToLarger(30,4));
+  
+ let msToTotalSeconds = milliseconds => convertToLarger(milliseconds,1000);
+console.log( msToTotalSeconds(10000) + " second");
+ 
+ let msToTotalMinutes = milliseconds => convertToLarger(msToTotalseconds(milliseconds),60);
+ console.log(msToTotalMinutes(6000000)+"minutes");
+ 
+ let msToTotalHours = milliseconds => convertToLarger(msToTotalMinutes(milliseconds),60)
+ console.log( msToTotalHours(60000000) + " hours")
+ 
+ let remainingAfterConvert = (num,i) => (num%i);
+ console.log(remainingAfterConvert(30/4));
+ 
+ let getSecondFromMs = milliseconds => remainingAfterConvert(msToTotalSeconds(milliseconds),60);
+ console.log(getSecondFromMs(100000));
+ 
+ let getMinuteFromMs = milliseconds => remainingAfterConvert((msToTotalMinutes(milliseconds),60000),24);
+ console.log(getMinuteFromMs(60000));
+ 
+ let getHourFromMs = milliseconds => remainingAfterConvert(msToTotalHours(milliseconds),3600),24);
+ console.log(getHourFromMs(3600000));
+ 
+ let convertToSmaller = (num,i) => (num*i);
+ console.log(convertToSmaller(2.74,4));
+ 
+ let daysToTotalHours = days => conertToSmaller(days,24);
+ console.log(daysToTotalHours(7));
+ 
+ let daysToTotalMinutes = days => convertToSmaller(days,1440);
+ console.log(daysToTotalMinutes(7));
+ 
+ let daysToTotalSeconds = days => convertToSmaller(days, 86400)
+ console.log(daysToTotalSeconds(2));
+ 
+ let getHourfromdays = days => 
+ 
+ 
  * @todo THEN USING THESE FUNCTIONS, REPLACE THE 0 IN EACH FUNCTION DEFINITION BELOW WITH THE APPROPRIATE OUTPUT
  * @todo BE SURE TO DOCUMENT EACH FUNCTION IN JSDOC FORMAT (USE BELOW AS REFERENCE AND SEE: http://usejsdoc.org/)
  */
